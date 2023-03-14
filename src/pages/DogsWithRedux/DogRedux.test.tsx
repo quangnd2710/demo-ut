@@ -1,15 +1,11 @@
-import React from "react";
-import { screen, waitFor, fireEvent } from "@testing-library/react";
-import { describe, it, vi } from "vitest";
-import { renderWithProviders } from "@/utils/renderWithProviders";
 import { api } from "@/api";
-import { setupStore } from "@/store";
 import {
-  getAllBreedSuccess,
-  getAllBreedsError,
-  getDetailBreedSuccess,
-  getDetailBreedError,
+  getAllBreedsError, getAllBreedSuccess, getDetailBreedError, getDetailBreedSuccess
 } from "@/pages/DogsWithRedux/dogSlice";
+import { setupStore } from "@/store";
+import { renderWithProviders } from "@/utils/renderWithProviders";
+import { fireEvent, screen, waitFor } from "@testing-library/react";
+import { describe, it, vi } from "vitest";
 import DogsWithRedux from "./";
 
 const mockListImages = [

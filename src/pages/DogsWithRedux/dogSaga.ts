@@ -1,9 +1,9 @@
 import { dogsApi } from "@/api";
-import { call, put, takeEvery, all } from "redux-saga/effects";
+import { DogType, ListResponse, MessageType } from "@/models";
 import { PayloadAction } from "@reduxjs/toolkit";
 import { get } from "lodash";
+import { all, call, put, takeEvery } from "redux-saga/effects";
 import { dogsActions } from "./dogSlice";
-import { DogType, ListResponse, MessageType } from "@/models";
 
 export function* fetchBreedsList() {
   try {

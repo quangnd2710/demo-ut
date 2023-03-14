@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "@/store/hooks";
-import { getAllBreeds, getDetailBreed, selectBreed } from "./dogSlice";
 import placeholderImg from "@/assets/undraw_relaxing_walk.svg";
+import { useAppDispatch, useAppSelector } from "@/store/hooks";
+import React, { useEffect } from "react";
+import { getAllBreeds, getDetailBreed, selectBreed } from "./dogSlice";
 
 function DogsWithRedux() {
   const {
